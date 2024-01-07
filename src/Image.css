@@ -1,4 +1,14 @@
 .sizeImg{
-    width: 100px;
-    height: 60px;
+    width: 100%; /* Set the width of the container to 100% of its parent */
+    height: 0; /* Set initial height to 0 */
+    padding-bottom: 75%; /* Set the height as a percentage of the width, adjust as needed */
+    position: relative;
+}
+.img{
+    position: absolute; /* Position the image relative to its container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the width of the image to fill the container */
+    height: 100%; /* Set the height of the image to fill the container */
+    object-fit: cover; 
 }

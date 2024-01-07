@@ -7,6 +7,7 @@ import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Image from './Image';
+import "./Image.css"
 
 function App() {
   const [index, setIndex] = useState(0);
@@ -33,10 +34,10 @@ console.log(index)
       <NavigateBeforeRoundedIcon />
     </IconButton>
     <Image ind= {index}>
-      <img src="https://yaaracacao.co.il/wp-content/uploads/2020/11/lev.jpg" alt='1'/>
-      <img src='https://taasuka.galil-elion.org.il/sites/taasuka.galil-elion.org.il/files/Indexb-photos/Screen%20Shot%202019-09-12%20at%2021.43.47.png' alt='2'/>
-      <img src='https://www.tory.co.il/wp-content/uploads/2022/07/DSC_1806-copy-scaled.jpg' alt='3'/>
-      <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Noto_Emoji_v2.034_2764.svg/640px-Noto_Emoji_v2.034_2764.svg.png' alt='4'/>
+      <img src="https://yaaracacao.co.il/wp-content/uploads/2020/11/lev.jpg" alt='1' className='img'/>
+      <img src='https://taasuka.galil-elion.org.il/sites/taasuka.galil-elion.org.il/files/Indexb-photos/Screen%20Shot%202019-09-12%20at%2021.43.47.png' alt='2' className='img'/>
+      <img src='https://www.tory.co.il/wp-content/uploads/2022/07/DSC_1806-copy-scaled.jpg' alt='3'className='img'/>
+      <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Noto_Emoji_v2.034_2764.svg/640px-Noto_Emoji_v2.034_2764.svg.png' alt='4'className='img'/>
     </Image>
     <IconButton onClick=/*{index==3?index=0:index++}*/{handleNext}>
       <NavigateNextRoundedIcon />
